@@ -73,6 +73,7 @@ body {
   position: relative;
   display: grid;
   place-content: center;
+  overflow-x: hidden;
 }
 
 img {
@@ -134,4 +135,98 @@ bg pattern
 .bg-pattern {
   position: absolute;
   top: 0;
+  pointer-events: none;
+}
+
+/*
+=============== 
+order summary
+===============
+*/
+
+.order {
+  background-color: var(--white);
+  text-align: center;
+  width: 600px;
+  border-radius: var(--main-radius);
+}
+
+.order__illustration {
+  pointer-events: none;
+  border-top-left-radius: var(--main-radius);
+  border-top-right-radius: var(--main-radius);
+}
+
+.order__body {
+  padding: 3rem;
+}
+
+.order__title {
+  font-size: 2.8rem;
+}
+
+.order__lead {
+  font-size: 1.6rem;
+  color: var(--desaturated-blue);
+  padding: 2rem 0;
+}
+
+.order__plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--very-pale-blue);
+  padding: 2rem;
+  border-radius: var(--main-radius);
+  margin-bottom: 2rem;
+}
+
+.order__plan > div {
+  display: flex;
+  align-items: center;
+}
+
+.order__icon {
+  margin-right: 2rem;
+}
+
+.order__plan-type {
+  font-size: 1.6rem;
+}
+
+.order__price {
+  font-size: 1.6rem;
+  color: var(--desaturated-blue);
+}
+
+.order__change-plan {
+  color: var(--bright-blue);
+  font-size: 1.4rem;
+  text-decoration: underline;
+}
+
+.order__cancel {
+  color: var(--desaturated-blue);
+  font-size: 1.5rem;
+}
+
+/*
+=============== 
+button
+===============
+*/
+
+.btn {
+  padding: 2rem;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+.btn--primary {
+  background-color: var(--bright-blue);
+  color: var(--white);
+  border-radius: var(--main-radius);
+  padding: 2rem;
 }
