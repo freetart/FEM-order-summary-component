@@ -13,3 +13,4 @@ site: https://fem-order-summary-component-challenge.netlify.app/
 
 #### Dependencies
 - live-server
+- aos
