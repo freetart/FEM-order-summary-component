@@ -208,13 +208,13 @@ order summary
 .order__change-plan {
   color: var(--bright-blue);
   font-size: 1.4rem;
-  text-decoration: underline;
   transition: var(--main-transition);
 }
 
 .order__change-plan:hover,
 .order__change-plan:focus {
   color: hsl(245, 75%, 68%);
+  text-decoration: underline;
 }
 
 .order__cancel {
@@ -254,6 +254,41 @@ button
 .btn--primary:hover,
 .btn--primary:focus {
   background-color: hsl(245, 75%, 68%);
+}
+
+/*
+=============== 
+tag
+===============
+*/
+
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 2rem 2rem 1rem 2rem;
+  margin-top: 5rem;
+}
+
+.tag__heading {
+  font-size: var(--xxs);
+  color: var(--black);
+}
+
+.tag__link {
+  color: var(--bright-blue);
+  outline: 0;
+}
+
+.tag__link:hover,
+.tag__link:focus {
+  text-decoration: underline;
+}
+
+.tag__logo {
+  width: 5rem;
 }
 
 /*
