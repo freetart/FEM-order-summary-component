@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- favicon -->
     <link rel="icon" href="./images/favicon/koala.ico" />
     <!-- css -->
@@ -19,7 +21,7 @@
 
     <!-- order -->
     <main class="container">
-      <article class="order">
+      <article class="order" data-aos="fade-up">
         <header class="order__header">
           <img
             class="order__illustration"
@@ -78,6 +80,11 @@
       <img src="./images/logo/habibdevgif.gif" alt="logo" class="tag__logo" />
     </article>
 
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 100, duration: 1000, once: true });
+    </script>
     <!-- main js -->
     <script src="./js/script.js"></script>
   </body>
