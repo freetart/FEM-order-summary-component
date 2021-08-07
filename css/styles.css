@@ -11,6 +11,7 @@ font
 variables
 ===============
 */
+
 :root {
   /* colors */
   --black: #222;
@@ -33,6 +34,7 @@ variables
 
   /* shadows */
   --main-shadow: 0.1rem 0.3rem 1rem rgba(0, 0, 0, 0.1);
+  --btn-shadow: 0.1rem 0.5rem 1rem hsl(245, 75%, 81%);
 
   /* transitions */
   --main-transition: all 0.3s ease-in-out;
@@ -150,6 +152,7 @@ order summary
   text-align: center;
   width: 600px;
   border-radius: var(--main-radius);
+  box-shadow: var(--main-shadow);
 }
 
 .order__illustration {
@@ -178,7 +181,6 @@ order summary
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 3rem;
-  text-align: center;
   background-color: var(--very-pale-blue);
   padding: 2rem;
   border-radius: var(--main-radius);
@@ -207,11 +209,23 @@ order summary
   color: var(--bright-blue);
   font-size: 1.4rem;
   text-decoration: underline;
+  transition: var(--main-transition);
+}
+
+.order__change-plan:hover,
+.order__change-plan:focus {
+  color: hsl(245, 75%, 68%);
 }
 
 .order__cancel {
   color: var(--desaturated-blue);
   font-size: 1.5rem;
+  transition: var(--main-transition);
+}
+
+.order__cancel:hover,
+.order__cancel:focus {
+  color: var(--black);
 }
 
 /*
@@ -233,6 +247,13 @@ button
   color: var(--white);
   border-radius: var(--main-radius);
   padding: 2rem;
+  box-shadow: var(--btn-shadow);
+  transition: var(--main-transition);
+}
+
+.btn--primary:hover,
+.btn--primary:focus {
+  background-color: hsl(245, 75%, 68%);
 }
 
 /*
