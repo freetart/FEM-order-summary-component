@@ -112,6 +112,7 @@ global classes
   z-index: 5;
   display: grid;
   place-content: center;
+  padding: var(--section-spacing);
 }
 
 .heading-styles {
@@ -175,6 +176,9 @@ order summary
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+  text-align: center;
   background-color: var(--very-pale-blue);
   padding: 2rem;
   border-radius: var(--main-radius);
@@ -229,4 +233,16 @@ button
   color: var(--white);
   border-radius: var(--main-radius);
   padding: 2rem;
+}
+
+/*
+=============== 
+media queries
+===============
+*/
+
+@media (max-width: 610px) {
+  .order {
+    width: 100%;
+  }
 }
