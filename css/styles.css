@@ -193,6 +193,7 @@ order summary
 }
 
 .order__icon {
+  width: 5rem;
   margin-right: 2rem;
 }
 
