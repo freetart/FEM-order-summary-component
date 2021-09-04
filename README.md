@@ -11,6 +11,6 @@ site: https://fem-order-summary-component-challenge.netlify.app/
 - html5 w/ bem naming convention
 - css
 
-#### Dependencies
+#### Libraries
 - live-server
 - aos
